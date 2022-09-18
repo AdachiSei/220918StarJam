@@ -11,5 +11,6 @@ public enum ButtonType
     Eight,
     Ninth,
     BackSpace,
-    Clear
+    Clear,
+    Enter
 }
