@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _password: 111
-  _inputScreen: {fileID: 0}
+  _inputScreen: {fileID: 2105038870}
+  _exitDoor: {fileID: 0}
   _nunberButton:
   - _number: 0
     _numberType: 0
