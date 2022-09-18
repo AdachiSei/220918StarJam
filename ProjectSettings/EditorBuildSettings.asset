@@ -14,4 +14,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Adachi/Scenes/ResultScene.unity
     guid: 13d17220b49e32b4599bc8971bf8666c
+  - enabled: 1
+    path: Assets/Kitasaka/KitasakaScene.unity
+    guid: bc2b255e0dba6d94db69e290c57d1c7f
+  - enabled: 1
+    path: Assets/Kitasaka/kitasakaScene2.unity
+    guid: 55b45301a98cdad45be43e758b7188d3
+  - enabled: 1
+    path: Assets/Kitasaka/kitasaka3Scene.unity
+    guid: c74af26fd282a084c92ff7eb2dd8225f
+  - enabled: 1
+    path: Assets/Kitasaka/kitasaka4Scene.unity
+    guid: 30b2bac306d34a0429d0ad78c3f73ef0
   m_configObjects: {}
