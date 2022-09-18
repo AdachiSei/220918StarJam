@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7738816956543447468}
   - component: {fileID: 7738816956543447469}
   - component: {fileID: 7738816956543447442}
+  - component: {fileID: -6628280244928948151}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -119,7 +120,7 @@ MonoBehaviour:
   MouseSensitivity: 2.4
   PlayerSpeed: 5
   RunningSpeed: 5
-  JumpSpeed: 3
+  JumpSpeed: 10
 --- !u!143 &7738816956543447469
 CharacterController:
   m_ObjectHideFlags: 0
@@ -152,8 +153,20 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &-6628280244928948151
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7738816956543447443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b156e5ac23fba4949a96c165f36ab2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7738816957489434994
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,8 +224,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 9
-  field of view: 40
+  far clip plane: 100
+  field of view: 86
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -247,7 +260,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7738816957653002932}
-  - component: {fileID: 7738816957653002935}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -271,23 +283,3 @@ Transform:
   m_Father: {fileID: 7738816956543447464}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7738816957653002935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7738816957653002933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 036dadc948dc6a340abecdf58412f7fd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _isDontDestroy: 1
-  bgm: 1
-  se: 1
-  _titleBGM: {fileID: 0}
-  _gameBGM: {fileID: 0}
-  _clearBGM: {fileID: 0}
-  _itemUseSFX: {fileID: 0}
-  _itemGetSFX: {fileID: 0}
