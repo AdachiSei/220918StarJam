@@ -43,11 +43,52 @@ public class PasswordInputer : MonoBehaviour
 
     void InputScreenButton(ButtonType type)
     {
+
         switch (type)
         {
+            case ButtonType.Zero:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += "0";
+                break;
+            case ButtonType.One:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 1;
+                break;
+            case ButtonType.Two:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 2;
+                break;
+            case ButtonType.Three:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 3;
+                break;
+            case ButtonType.Four:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 4;
+                break;
+            case ButtonType.Five:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 5;
+                break;
+            case ButtonType.Six:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 6;
+                break;
+            case ButtonType.Seven:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 7;
+                break;
+            case ButtonType.Eight:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 8;
+                break;
+            case ButtonType.Ninth:
+                if (_passwordData.Length < _password.Length)
+                    _passwordData += 9;
+                break;
             case ButtonType.BackSpace:
-                if(_passwordData.Length != 0)
-                _passwordData = _passwordData.Remove(_passwordData.Length - 1);
+                if (_passwordData.Length != 0)
+                    _passwordData = _passwordData.Remove(_passwordData.Length - 1);
                 break;
             case ButtonType.Clear:
                 _passwordData = "";
@@ -57,13 +98,10 @@ public class PasswordInputer : MonoBehaviour
                 {
                     _inputScreen.gameObject.SetActive(false);
                     Destroy(_exitDoor);
+                    SceneLoader.Instance.LoadScene(SceneType.ResultScene);
                     Debug.Log("ƒNƒŠƒA");
                 }
                 else _passwordData = "";
-                break;
-            default:
-                if(_passwordData.Length < _password.Length)
-                _passwordData += (int)type;
                 break;
         }
 

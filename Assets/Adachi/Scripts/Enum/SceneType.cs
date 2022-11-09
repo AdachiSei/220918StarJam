@@ -7,5 +7,9 @@ public enum SceneType
     empty,
     TitleScene,
     ResultScene,
-    SelectScene
+    SelectScene,
+    KitasakaScene,
+    kitasakaScene2,
+    kitasaka3Scene,
+    kitasaka4Scene
 }
